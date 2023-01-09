@@ -1,0 +1,1104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,
+h4,h5,h6{
+    margin-bottom: 50px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: var(--logoColor-1);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline;
+}
+
+.showInphone{
+    display: none;
+}
+
+.BgPadding{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.sectionMargin{
+    margin-bottom: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1800px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--logoColor-1);
+    transition: all .5s; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c66af;
+    transition: all .5s;
+  }
+
+/* Scroll */
+
+@media screen and (min-width: 1024px) {
+    .laptopWideth20{
+        width: 20%;
+    }
+}
+
+/* for mobile start */
+@media screen and (max-width: 767px) {
+    .DisNoneinPhone{
+        display: none;
+    }
+
+    .fullwidtTebe{
+        width: 100%;
+    }
+
+    .showInphone{
+        display: block !important;
+    }
+}
+/* for mobile end */
+
+/* for only mobile mobile start */
+@media screen and (max-width: 575px) {
+    .Mobile50{
+        width: 50%;
+        margin: auto;
+    }
+}
+/* for mobile end */
+
+/* navigatin stat */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transform: all 5s;
+}
+
+.TopNev{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .3rem 0;
+    background-color: rgb(116 61 0 / 97%);
+    color: white;
+}
+
+.TopNev li{
+    font-size: 13px;
+    margin-right: 0.4rem;
+    font-weight: bold;
+}
+
+.TopNev li:hover, 
+.ContactDiv ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.TopNev ul li .icon{
+    color: white;
+    font-size: 13px;
+}
+
+.ContactDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.ContactDiv ul li:not(:last-child){
+    border-right: 1px solid white;
+}
+
+.ContactDiv ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ContactDiv ul li a i{
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.ContactDiv ul li a i:hover {
+    background-color: white;
+}
+
+.ContactDiv ul li:hover .facbookNav {
+    color: #0f90f3 !important;
+}
+
+.ContactDiv ul li:hover .inastragramNav {
+    color: #e7385c !important;
+}
+
+.ContactDiv ul li:hover .Youtube {
+    color: #ff0000 !important;
+}
+
+.ContactDiv ul li:hover .tuitterNav {
+    color: #1d9bf0 !important;
+}
+
+.Youtube i {
+    width: 28px !important;
+}
+/* Top Nevber end */
+
+/* Mid NevBer start */
+.MidNev{
+    color: black;
+    padding: 12px 0;
+    background-color: white;
+}
+
+.MidNev img{
+   height:  auto;
+   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .MidNev img{
+        height: 57px;
+        max-height: 57px !important;
+    }
+}
+
+.Serchber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Serchber form{
+    width: 93%;
+}
+
+input{
+    width: 90%;
+    outline: none;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 24px;
+    border: none;
+    float: right;
+    border: 1px solid var(--logoColor-1);
+}
+
+input:focus,input:hover{
+    outline: none;
+}
+
+.textarea{
+    border-radius: 8px;
+}
+
+.SelectedIocn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.5%;
+}
+
+.IconDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.IconDiv i{
+    color: white;
+    font-size: 18px;
+    margin-right: 0.4rem;
+}
+
+.IconDiv:not(:last-child){
+    margin-right: .5rem;
+}
+
+.IconDiv p{
+    margin-bottom: 0 ;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.IconDiv a{
+    color: rgb(255, 255, 255);
+}
+
+/* switch acount start*/
+.IconDiv img{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.UserImg {
+    position: relative;
+}
+
+.WtitchDiv{
+    position: absolute;
+    background-color: white;
+    height: 238px;
+    width: 250px;
+    box-shadow: 0 0 10px #c9c9c9;
+    bottom: -245px;
+    right: 0;
+    border-radius: 7px;
+    padding: 9px 15px;
+    text-align: center;
+    display: none;
+}
+
+.WtitchDiv div{
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--logoColor-1);
+    font-size: 14px !important;
+    text-align: left;
+}
+
+.WtitchDiv div:hover{
+    border-radius: 7px;
+    background-color: var(--logoColor-2);
+    border-bottom: 1px solid var(--logoColor-2);
+}
+
+.WtitchDiv div:hover a{
+    color: white;
+}
+
+.WtitchDiv div img{
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
+    border: 50%;
+    border: 1px solid var(--logoColor-2);
+}
+
+.WtitchDiv button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 7px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px #c9c9c9;
+    background-color: var(--logoColor-1);
+}
+
+.WtitchDiv button:hover{
+    background-color: var(--logoColor-2);
+}
+
+@media screen and (max-width: 1200px) {
+    .LoveHideLaptop{
+        display: none;
+    }
+
+    .IconDiv:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    .SelectedIocn {
+        justify-content: end;
+    }
+}
+
+/* switch acount end*/
+
+.Count{
+    background: var(--logoColor-2);
+    width: 29px;
+    height: 18px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.Serchber form{
+    position: relative;
+}
+
+.Serchber label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--logoColor-1);
+    height: 40px;
+    width: 50px;
+    padding-top: 8px;
+    border-radius: 0 24px 24px 0;
+    text-align: center;
+    color: white;
+}
+
+.NavCart{
+    position: relative;
+    background-color: #b9772d;
+    padding: 5px 18px;
+    border-radius: 24px;
+}
+
+.CartSummaryNav{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 33px;
+    font-size: 14px;
+    font-weight: 400 !important;
+    padding: 17px;
+    width: 350px;
+    background-color: white;
+    color: #8d8686;
+    box-shadow: 0 0 10px #c9c9c9;
+    border-radius: 7px;
+}
+
+.NavCart:hover .CartSummaryNav{
+    display: block;
+}
+
+.CartUpperSummary .upperRight{
+    text-align: right;
+}
+
+.CartUpperSummary .upperRight .Price{
+    font-weight: 700 !important;
+    font-size: 18px !important;
+}
+
+.CartNabBtn{
+    width: 100%;
+    text-align: center;
+    background: var(--logoColor-1);
+    color: white;
+    padding: 11px 5px;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.CartNabBtn:hover{
+    background: var(--logoColor-2);
+}
+
+.CartNabBtn1{
+    background-color: rgb(204, 204, 204);
+}
+
+.CartNabBtn a{
+    width: 100%;
+    color: white;
+}
+
+.CartNabBtn1 a{
+    color:  rgb(90, 90, 90);
+}
+
+.CartSummaryProduct{
+    margin: 2rem 0;
+}
+
+.CartProductTitle{
+    font-weight: 500;
+}
+
+.CartNavForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.CartNavForm .CartProductQuantity{
+    display: flex;
+    align-items: center;
+}
+
+.CartNavForm .CartProductQuantity label{
+    margin-right: 6px;
+}
+
+.CartNavForm .CartProductQuantity input{
+    border: 1px solid gray;
+    width: 40px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.CartNavForm .CartProductQuantity button{
+    background: none;
+    border: none;
+}
+
+.CartNavForm .CartProductQuantity i{
+    color: #af0707;
+}
+/* Mid NevBer end */
+
+/* Bootom Navbar start*/
+.BottomNev{
+    background-color: #d8d8d8;
+    padding: 9px 0;
+}
+
+.DestopNavCtagoris{
+    background-color: var(--logoColor-1);
+    justify-content: space-between;
+    padding: 7px 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.DestopNavCtagoris i{
+    float: right;
+    font-size: 24px;
+}
+
+.horizontal-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.horizontal-menu ul li{
+    margin-right: .5rem;
+    font-size: 15px;
+}
+
+.horizontal-menu ul li a{
+    color: #000000;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.horizontal-menu ul li a:hover{
+    color: var(--logoColor-2);
+    cursor: pointer;
+}
+
+.ShowInTabe{
+    display: none;
+}
+
+.ChnagePositiono{
+    position: fixed;
+    top: 50PX;
+}
+
+/* .CatagorisIcinHide{
+    display: none;
+} */
+
+.DestopNavCtagoris{
+    position: relative !important;
+}
+
+.NavClickAction{
+    position: absolute !important;
+    display: none;
+    margin-top: 11px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 5px #a79f9f;
+    width: 215px;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+.CatagorisIcinHideCros{
+    display: none;
+}
+/* Bootom Navbar end*/
+
+/* nav for tabe and mobile start */
+@media screen and (max-width: 1023px) {
+    .hideOnPhone{
+        display: none;
+    }
+
+    .ShowInTabe{
+        display: block;
+    }
+}
+
+.ShowInTabe a{
+    color: white;
+}
+
+.MoboTop{
+    background-color: var(--logoColor-1);
+    color: white;
+    padding: 5px 0;
+}
+
+.MovboBottom{
+    padding: 8px 18px;
+    background-color: rgb(212, 211, 211);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.MovboBottom .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+}
+
+.MovboBottom i{
+    font-size: 30px;
+}
+
+.MovboBottom a {
+    color: black;
+}
+
+.MovboBottom a:hover{
+    color: var(--DestopCatagori);
+}
+
+.LogoTabe{
+    text-align: center;
+}
+
+.logo img{
+    margin-bottom: 0;
+}
+
+.LogoTabe img{
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px !important;
+}
+
+.CatagorisTabe i{
+    float: left;
+}
+
+.CartTabe i{
+    float: right;
+}
+
+.CartTabe i,.CatagorisTabe i{
+    font-size: 32px !important;
+    margin-top: 20px;
+    color: white;
+}
+
+.navbar-toggler{
+    padding: 0;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0;
+    color: white;
+}
+
+.navbar-toggler:focus{
+    padding: 0;
+    bottom: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-item {
+    color: #000 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 20px;
+}
+
+.NavCaragoris{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    background-color: rgb(237 237 237);
+    width: 60%;
+    color: rgb(15, 15, 15) !important ;
+    padding: 0.5rem 0.5rem;
+    height: 100%;
+    overflow: scroll;
+    z-index: 100;
+}
+
+.dropdown{
+    display: block !important;
+}
+
+.dropdown-menu{
+    --bs-dropdown-min-width: 0rem !important;
+    position: relative !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    --bs-dropdown-padding-y: 0.0rem !important;
+}
+
+.nav-link{
+    color: black !important;
+    padding: .1rem 0rem;
+}
+
+.navbar{
+    padding-top: 0;
+}
+
+.MobileMwnuTitle{
+    width: 100%;
+    background-color: var(--navColor);
+    display: flex;
+    justify-content: space-between;
+    color: var(--logoColor-1);
+}
+
+.NavCaragoris ul li{
+    padding: 6px;
+}
+
+.NavCaragoris ul li i{
+    font-size: 24px;
+}
+
+.nav-item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 4px 20px;
+}
+
+.nav-item:hover{
+    background-color: rgb(181, 181, 181);
+    color: white;
+    border-radius: 24px;
+}
+
+.nav-item i {
+    color: black;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.nav-item:hover .nav-link{
+    color: white !important;
+}
+
+.nav-item:hover .navLinkI{
+    color: white !important;
+}
+
+
+.NavSubBrance{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item:not(:last-child){
+    border-bottom: 1px solid #e7e6e6;
+}
+
+.nav-item img{
+    height: 22px;
+    width: 20px;
+    margin-right: .2rem ;
+}
+
+.nav-item span{
+    background: #cdcdcd;
+    padding: 2px 4px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link div{
+    display:  inline !important;
+}
+
+.active{
+    color: black;
+    font-weight: 600;
+}
+
+.DeopDownMenuMobiel{
+    background-color: var(--logoColor-1);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+.DeopDownMenuMobiel .DeopDownDiv{
+    margin-bottom: 10px;
+}
+
+.DeopDownMenuMobiel h6{
+    color: white;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+
+.DeopDownMenuMobiel ul li{
+    display: block;
+    padding: 3px;
+}
+
+.MyAccount{
+    display: block;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 18px;
+    font-size: 15px;
+    padding: 5px 19px;
+    background-color: gainsboro;
+}
+
+.menuOffer{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.menuOffer a{
+    font-size: 15px !important;
+    color: white !important;
+}
+
+.menuCollor1{
+    background-color: #225ce4;
+}
+
+.menuCollor2{
+    background-color: #e72650;
+}
+
+.menuCollor3{
+    background-color: #b047c9;
+}
+
+.menuCollor4{
+    background-color: #09b5b5;
+}
+
+.menuCollor5{
+    background-color: #09b566;
+}
+/* nav for tabe and mobile end */
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+    .SelectedIocn {
+        padding-left: 0 !important;
+    }
+
+    .MyAccount {
+        font-size: 13px;
+        padding: 5px 18px;
+    }
+
+    .IconDiv p {
+        font-size: 14px;
+    }
+
+    .IconDiv i {
+        font-size: 14px;
+    }
+
+    .NavCart {
+        padding: 5px 11px;
+        margin-left: 0.2rem;
+    }
+
+    .horizontal-menu ul li {
+        font-size: 15px;
+    }
+
+    .menuOffer {
+        padding: 3px 9px;
+    }
+
+    .DestopNavCtagoris {
+        padding: 6px 9px;
+    }
+}
+/* navigatin end */
+
+/* footer start */
+footer{
+    background-color: #343a40;
+    color: white;
+}
+
+footer h3{
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--logoColor-1);
+    width: 80%;
+    padding-bottom: 10px;
+    color: var(--logoColor-1);
+}
+
+footer ul li{
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+.CopyWrite{
+    background-color: black;
+    color: rgb(200, 200, 200);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.CopyWrite p{
+    margin-bottom: 0;
+}
+
+.solcilaLink{
+    margin-bottom: 20px;
+}
+
+.solcilaLink li{
+    display: inline;
+    text-align: center;
+}
+
+.solcilaLink li i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    height: 33px;
+    width: 35px;
+    font-size: 20px;
+}
+
+.solcilaLink li i:hover{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.fa-facebook-f:hover{
+    background-color: #007bff !important;
+    color: white;
+}
+
+.fa-instagram:hover{
+    background-color: #e83e8c !important;
+    color: white;
+}
+
+.fa-youtube:hover{
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+.fa-linkedin-in:hover{
+    background-color: #007bff !important;
+    color: white;
+}
+.fa-twitter:hover{
+    background-color: #007bff !important;
+    color: white;
+}
+/* footer end */
+
+/* Home Page Heros start*/
+.herosMargin{
+    margin-top: 171px;
+}
+
+.carousel{
+    font-size: 24px;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    height: 35px;
+    width: 35px;
+    top: 42%;
+    border-radius: 20px;
+    background-color: var(--logoColor-1);
+}
+
+.carousel-control-prev{
+    left: 30px;
+}
+
+.carousel-control-next{
+    right: 30px;
+}
+/* Home Page Heros start*/
+
+/* offfer start */
+.offerSection img{
+    border-radius: 12px;
+}
+
+.offerSection2 img{
+    height: 232px;
+}
+/* offfer end */
+
+/* responsive start */
+@media screen and (max-width: 991px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1,h2,h3,
+    h4,h5,h6{
+        margin-bottom: 25px !important;
+    }
+
+    p{
+        margin-bottom: 20px;
+    }
+
+    .BgPadding{
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+
+    .sectionMargin{
+        margin-bottom: 5px;
+    }
+    .herosMargin{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h1,h2,h3,
+    h4,h5,h6{
+        margin-bottom: 12px !important;
+    }
+
+    p{
+        margin-bottom: 12px;
+    }
+
+    .BgPadding{
+        padding-top: 12px;
+        padding-bottom: 0px;
+    }
+
+    .sectionMargin{
+        margin-bottom: 0px;
+    }
+
+    footer ul li{
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    footer{
+        text-align: center;
+    }
+
+    footer h3{
+        margin: auto;
+        margin-bottom: 12px;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev{
+        height: 25px;
+        width: 25px;
+        top: 32%;
+        font-size: 18px;
+    }
+    }
+/* responsive end */
+
+:root {
+    --logoColor-1: #b9772d;
+    --logoColor-2: #6a6766;
+    --servocehover: #e79855;
+    --navColor: rgb(216, 216, 216);
+    --navIconColor: red;
+    --navmidbg: #75b535;
+    --TopNev: #3c516a;
+    --DestopCatagori: #3e6a10;
+}
