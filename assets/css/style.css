@@ -102,6 +102,10 @@ ul li{
     margin-bottom: 0px !important;
 }
 
+.Title .Btn{
+    width: 85px;
+}
+
 /* Scroll */
 
 /* width */
@@ -1393,8 +1397,8 @@ footer a{
     }
 
     .ProductDiv {
-        padding-left: 7px;
-        padding-right: 7px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .ProductCard .ProductText p {
@@ -1428,6 +1432,19 @@ footer a{
 
     .offerSection1{
         display: none;
+    }
+
+    .Blog{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .bolgCard .blogImage {
+        height: 120px;
+    }
+
+    .bolgCard .blogText h3{
+        font-size: 16px !important;
     }
 }
 
