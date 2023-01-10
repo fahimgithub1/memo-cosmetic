@@ -156,7 +156,7 @@ ul li{
 /* for mobile end */
 
 /* for only mobile mobile start */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
     .Mobile50{
         width: 50%;
         margin: auto;
