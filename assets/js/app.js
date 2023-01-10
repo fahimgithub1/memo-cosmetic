@@ -27,16 +27,22 @@ window.addEventListener('scroll', () => {
 })
 
 // hdie and show ctagoris in scrole
-let CatagorisIcinHide111 = document.querySelector(".CatagorisIcinHide");
-CatagorisIcinHide111.addEventListener("click", function() {
-    document.getElementById("NavClickAction").style.display = "block";
-    document.getElementById("CatagorisIcinHide").style.display = "none";
-    document.getElementById("CatagorisIcinHideCros").style.display = "block";
-});
+    let CatagorisIcinHide111 = document.querySelector(".CatagorisIcinHide2");
+    let isTrue = true
 
-let CatagorisIcinHideCros2222 = document.querySelector(".CatagorisIcinHideCros");
-CatagorisIcinHideCros2222.addEventListener("click", function() {
-    document.getElementById("NavClickAction").style.display = "none";
-    document.getElementById("CatagorisIcinHide").style.display = "block";
-    document.getElementById("CatagorisIcinHideCros").style.display = "none";
-});
+    CatagorisIcinHide111.addEventListener("click", function() {
+        if(isTrue){
+            document.getElementById("NavClickAction").style.display = "block";
+            document.getElementById("CatagorisIcinHide2").style.display = "none";
+            document.getElementById("CatagorisIcinHideCros").style.display = "block";
+            isTrue=false
+        }
+        else{
+            document.getElementById("NavClickAction").style.display = "none";
+            document.getElementById("CatagorisIcinHide2").style.display = "block";
+            document.getElementById("CatagorisIcinHideCros").style.display = "none";
+            isTrue = true
+        }
+    });
+
+

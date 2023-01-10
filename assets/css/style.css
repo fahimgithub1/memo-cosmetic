@@ -9,9 +9,17 @@ body{
     padding: 0;
 }
 
-h1,h2,h3,
-h4,h5,h6{
+h1,h2,h3{
     margin-bottom: 50px;
+}
+
+h4,h5,h6{
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
 }
 
 p{
@@ -21,6 +29,7 @@ p{
 img{
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 12px;
 }
 
 a{
@@ -30,6 +39,26 @@ a{
 
 a:hover{
     color: var(--logoColor-1);
+}
+
+.Btn{
+    text-align: center;
+    display: block;
+}
+
+.Btn:hover{
+    color: white;
+}
+
+button,
+.Btn{
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 7px;
+    background-color: var(--logoColor-1);
 }
 
 ul{
@@ -60,6 +89,17 @@ ul li{
     max-width: 1800px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.Title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.Title h2{
+    margin-bottom: 0px !important;
 }
 
 /* Scroll */
@@ -1001,6 +1041,10 @@ footer a{
 .carousel-control-next{
     right: 30px;
 }
+
+.carousel-inner img{
+    border-radius: 0;
+}
 /* Home Page Heros start*/
 
 /* offfer start */
@@ -1008,10 +1052,256 @@ footer a{
     border-radius: 12px;
 }
 
-.offerSection2 img{
-    height: 232px;
+@media screen and (min-width: 1024px) {
+    .offerSection1 img{
+        height: 484px;
+    }
+
+    .offerSection2 img{
+        height: 232px;
+    }
 }
 /* offfer end */
+
+/* categoris start */
+.CategorySection img{
+    margin-bottom: 10px;
+    max-height: 313px;
+}
+
+.CategorySection p{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4b4848;
+}
+
+.CategorySection p:hover{
+    color: var(--logoColor-1);
+}
+/* categoris end */
+
+/* New Product start */
+.ProductDiv{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ProductCard{
+    margin-bottom: 20px;
+    box-shadow:  0 0 5px #86551da3;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.ProductCard .ProductImg{
+    height: 225px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductCard .ProductImg img{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.ProductCard .ProductText p{
+    margin-bottom: 20px;
+}
+
+.ProductCard .ProductText .Price{
+    font-weight: 700;
+}
+
+.ProductCard .ProductText .Discount{
+    color: rgb(69, 69, 69);
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.ProductCard .ProductText button{
+    width: 100%;
+    border-radius: 23px !important;
+}
+
+.Increment{
+    position: relative;
+    height: 28px;
+    width: 50%;
+    margin: auto;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.PriceAndIncrement{
+    margin-bottom: 15px;
+}
+
+.PriceAndIncrement p{
+    margin-bottom: 10px !important;
+}
+
+.Increment .btna{
+    top: 0;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 1px;
+    outline: none;
+    border-radius: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.Increment input{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    height: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+.Increment .btn1{
+    left: 8px;
+}
+
+.Increment .btn2{
+    right: 8px;
+}
+
+.Increment input{
+    display: block;
+    margin-bottom: 10px;
+    height: 15px;
+}
+
+.ProductCard{
+    position: relative;
+}
+
+.loveandShear{
+    top: 3px;
+    right: 3px;
+    position: absolute;
+}
+
+.DiscoountDiv{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: #e72650;
+}
+
+.loveandShear ul{
+   padding: 5px;
+   color: white;
+   border-radius: 5px;
+   /* background-color: #e72650; */
+}
+
+.loveandShear ul i{
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--logoColor-1);
+}
+/* New Product end */
+
+/* blog start */
+.Blog{
+    margin-bottom: 20px;
+}
+
+.bolgCard{
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px #c9c9c9;
+}
+
+.bolgCard .blogImage{
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.bolgCard .blogImage img{
+    border-radius: 12px;
+    margin-bottom: 0;
+    max-height: 170px;
+}
+
+.bolgCard .blogText{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.bolgCard .blogText h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.bolgCard .blogText p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.bolgCard .blogText .Btn{
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* blog end */
+
+/* shopping featrucer start */
+.ShppingFeatures{
+    background-color: rgb(237 237 237);
+}
+
+.ShoppingFeaturer1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.ShppingFeatures .ShoppingFeaturer1 img{
+    width: auto;
+    margin-bottom: 0;
+}
+
+.ShppingFeatures .ShoppingFeaturer1 .Shoppingtext{
+    padding-left: 17px;
+}
+
+.ShppingFeatures .ShoppingFeaturer1 .Shoppingtext h2{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.ShppingFeatures .ShoppingFeaturer1 .Shoppingtext  p{
+    margin-bottom: 0;
+    font-size: 15px;
+}
+/* shopping featrucer start */
+
+/* ssl commarce start */
+.sslecommarce{
+    background-color: rgb(190 190 190);
+}
+/* ssl commarce end */
+
 
 /* responsive start */
 @media screen and (max-width: 991px){
@@ -1020,11 +1310,15 @@ footer a{
         padding-right: 20px;
     }
 
+    .Title{
+        margin-bottom: 25px !important;
+    }
+
     h1,h2,h3,
     h4,h5,h6{
         margin-bottom: 25px !important;
     }
-
+    
     p{
         margin-bottom: 20px;
     }
@@ -1046,6 +1340,10 @@ footer a{
     .container{
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .Title{
+        margin-bottom: 12px !important;
     }
 
     h1,h2,h3,
@@ -1072,7 +1370,7 @@ footer a{
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 575px) {
     footer{
         text-align: center;
     }
@@ -1089,7 +1387,50 @@ footer a{
         top: 32%;
         font-size: 18px;
     }
+
+    .CategorySection p {
+        font-size: 17px;
     }
+
+    .ProductDiv {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .ProductCard .ProductText p {
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+
+    .PriceAndIncrement {
+        margin-bottom: 7px;
+    }
+
+    .Increment {
+        width: 70%;
+    }
+
+    .ProductCard {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .Btn,button{
+        font-size: 13px !important;
+    }
+
+    .ProductCard .ProductImg {
+        height: 122px;
+    }
+
+    .offerSection1{
+        display: none;
+    }
+}
+
 /* responsive end */
 
 :root {
