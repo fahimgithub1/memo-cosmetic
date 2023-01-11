@@ -257,13 +257,13 @@ nav{
 
 .MidNev img{
    height:  auto;
-   width: 100%;
+   width: 88%;
 }
 
 @media screen and (min-width: 1024px) {
     .MidNev img{
-        height: 57px;
-        max-height: 57px !important;
+        /* height: 57px;
+        max-height: 57px !important; */
     }
 }
 
@@ -284,7 +284,7 @@ input{
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 200;
-    border-radius: 24px;
+    border-radius: var(--nav-boreder-raious);
     border: none;
     float: right;
     border: 1px solid var(--logoColor-1);
@@ -437,7 +437,7 @@ input:focus,input:hover{
     height: 40px;
     width: 50px;
     padding-top: 8px;
-    border-radius: 0 24px 24px 0;
+    border-radius: 0 var(--nav-boreder-raious) var(--nav-boreder-raious) 0;
     text-align: center;
     color: white;
 }
@@ -446,7 +446,7 @@ input:focus,input:hover{
     position: relative;
     background-color: #b9772d;
     padding: 5px 18px;
-    border-radius: 24px;
+    border-radius: var(--nav-boreder-raious);
 }
 
 .CartSummaryNav{
@@ -483,7 +483,7 @@ input:focus,input:hover{
     background: var(--logoColor-1);
     color: white;
     padding: 11px 5px;
-    border-radius: 5px;
+    border-radius: var(--nav-boreder-raious);
     margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 500;
@@ -562,7 +562,7 @@ input:focus,input:hover{
     padding: 7px 16px;
     color: white;
     font-weight: bold;
-    border-radius: 24px;
+    border-radius: var(--nav-boreder-raious);
 }
 
 .DestopNavCtagoris i{
@@ -865,7 +865,7 @@ input:focus,input:hover{
     color: black;
     font-weight: 700;
     text-transform: uppercase;
-    border-radius: 18px;
+    border-radius: var(--nav-boreder-raious);
     font-size: 15px;
     padding: 5px 19px;
     background-color: gainsboro;
@@ -873,7 +873,7 @@ input:focus,input:hover{
 
 .menuOffer{
     padding: 6px 15px;
-    border-radius: 20px;
+    border-radius: var(--nav-boreder-raious);
 }
 
 .menuOffer a{
@@ -1466,4 +1466,6 @@ footer a{
     --navmidbg: #75b535;
     --TopNev: #3c516a;
     --DestopCatagori: #3e6a10;
+
+    --nav-boreder-raious: 7px;
 }
