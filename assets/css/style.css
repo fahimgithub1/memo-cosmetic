@@ -946,11 +946,13 @@ footer{
 }
 
 footer h3{
+    font-size: 23px;
     margin-bottom: 40px;
     border-bottom: 1px solid var(--logoColor-1);
     width: 80%;
     padding-bottom: 10px;
     color: var(--logoColor-1);
+    text-transform: capitalize;
 }
 
 footer ul li{
@@ -1234,13 +1236,13 @@ footer a{
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 15px;
-    height: 172px;
+    height: 200px;
 }
 
 .bolgCard .blogImage img{
     border-radius: 12px;
     margin-bottom: 0;
-    max-height: 170px;
+    max-height: 100%;
 }
 
 .bolgCard .blogText{
@@ -1279,6 +1281,10 @@ footer a{
     border-radius: 12px;
     margin-bottom: 20px;
     border: 1px solid rgb(118, 118, 118);
+}
+
+.ShoppingFeaturer1 h2{
+    text-align: left;
 }
 
 .ShppingFeatures .ShoppingFeaturer1 img{
