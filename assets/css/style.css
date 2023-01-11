@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 *{
@@ -562,6 +563,7 @@ input:focus,input:hover{
     padding: 7px 16px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
     border-radius: var(--nav-boreder-raious);
 }
 
@@ -988,8 +990,9 @@ footer a{
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
-    height: 33px;
+    height: 35px;
     width: 35px;
+    padding-top: 7px;
     font-size: 20px;
 }
 
@@ -1024,7 +1027,7 @@ footer a{
 
 /* Home Page Heros start*/
 .herosMargin{
-    margin-top: 171px;
+    margin-top: 191px;
 }
 
 .carousel{
@@ -1344,6 +1347,10 @@ footer a{
     }
     .herosMargin{
         margin-top: 80px;
+    }
+
+    .CopyWrite {
+        padding-bottom: 60px;
     }
 }
 
